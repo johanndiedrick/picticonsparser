@@ -2,7 +2,10 @@ import sys
 
 #words to picticons
 
-picticons_dictionary = {'I':'o<', 'know':'(.%.)', 'sunny':':O:'}
+#picticons_dictionary = {'I':'o<', 'know':'(.%.)', 'sunny':':O:'}
+
+picticons_dictionary = eval(open("picticons_dictionary.txt").read())
+
 
 for line in sys.stdin:
 	new_line = list()
