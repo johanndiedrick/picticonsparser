@@ -14,6 +14,8 @@ for line in sys.stdin:
 	for word in line_words:
 		if word in picticons_dictionary:
 			word = picticons_dictionary[word]
+		else:
+			word = u"\u25A0"
 		new_line.append(word)
 	print " ".join(new_line)
 
